@@ -21,23 +21,23 @@ The LSTM model, a type of recurrent neural network (RNN), was chosen for its rob
 
 
 
-Forget Gate (f<t>): Decides which information from the previous cell state (C<t-1>) to discard.
-Input Gate (i<t>): Determines which new information from the current input (x<t>) and previous hidden state (h<t-1>) to store in the cell state.
-Cell State Update (C<t>): Combines the previous cell state (after forgetting) with new information (via the input gate and a Tanh activation) to update the cell state.
-Output Gate (o<t>): Controls what parts of the cell state are output to the hidden state (h<t>), which is passed to the next time step.
-The Tanh activation functions ensure that values are scaled appropriately, while the gates use sigmoid activations (σ) to produce values between 0 and 1, effectively acting as filters.
+<h3>Forget Gate (f<t>):</h3> Decides which information from the previous cell state (C<t-1>) to discard.
+<h3>Input Gate (i<t>):</h3> Determines which new information from the current input (x<t>) and previous hidden state (h<t-1>) to store in the cell state.
+<h3>Cell State Update (C<t>):</h3> Combines the previous cell state (after forgetting) with new information (via the input gate and a Tanh activation) to update the cell state.
+<h3>Output Gate (o<t>):</h3> Controls what parts of the cell state are output to the hidden state (h<t>), which is passed to the next time step.
+The Tan h activation functions ensure that values are scaled appropriately, while the gates use sigmoid activations (σ) to produce values between 0 and 1, effectively acting as filters.
 Frontend Integration
 
 The trained LSTM model was integrated into a user-friendly dashboard built using Tailwind CSS and JavaScript. The frontend allows users to input parameters, visualize predictions, and explore stock price volatility trends interactively. The dashboard is designed to be responsive and intuitive, ensuring a seamless experience for end users.
 
-Why LSTM?
+<h3>Why LSTM?</h3>
 LSTM outperformed other models like Logistic Regression, XGBoost, and Random Forest in our tests, as it is specifically designed for sequential data. Its ability to retain long-term dependencies through the cell state and gates makes it ideal for time series tasks like stock price volatility prediction.
 
-Tools and Technologies
-Data Analysis and Visualization: Seaborn, Matplotlib, Scikit-learn
-Machine Learning Models: Logistic Regression, XGBoost, Random Forest, LSTM
-Frontend: Tailwind CSS, JavaScript
-Dataset: Tesla stock price data (10+ years) from Kaggle
+<h2>Tools and Technologies</h2>
+<h3>Data Analysis and Visualization:</h3> Seaborn, Matplotlib, Scikit-learn
+<h3>Machine Learning Models:</h3> Logistic Regression, XGBoost, Random Forest, LSTM
+<h3>Frontend:</h3> Tailwind CSS, JavaScript
+<h3>Dataset:</h3> Tesla stock price data (10+ years) from Kaggle
 Feel free to explore the code, contribute, or provide feedback!
 
 <h3>Access the frontend website for the dashboard of the stock volatility that I and my team have curated:</h3>
