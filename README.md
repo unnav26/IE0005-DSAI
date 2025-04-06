@@ -26,7 +26,7 @@ The LSTM model, a type of recurrent neural network (RNN), was chosen for its rob
 <h3>Cell State Update (C<t>):</h3> Combines the previous cell state (after forgetting) with new information (via the input gate and a Tanh activation) to update the cell state.
 <h3>Output Gate (o<t>):</h3> Controls what parts of the cell state are output to the hidden state (h<t>), which is passed to the next time step.
 The Tan h activation functions ensure that values are scaled appropriately, while the gates use sigmoid activations (σ) to produce values between 0 and 1, effectively acting as filters.
-Frontend Integration
+<h2>Frontend Integration</h2>
 
 The trained LSTM model was integrated into a user-friendly dashboard built using Tailwind CSS and JavaScript. The frontend allows users to input parameters, visualize predictions, and explore stock price volatility trends interactively. The dashboard is designed to be responsive and intuitive, ensuring a seamless experience for end users.
 
